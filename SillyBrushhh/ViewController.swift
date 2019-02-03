@@ -20,6 +20,8 @@ class ViewController: UIViewController {
     var isDrawing = false
     var lastPoint = CGPoint.zero
     
+    var blendMode = CGBlendMode.normal
+    
     let colors : [(CGFloat, CGFloat, CGFloat)] = [
         (0,0,0), // BLACK
         (1.0, 51/255, 51/255), //RED BEAUTIFUL
@@ -45,13 +47,10 @@ class ViewController: UIViewController {
         // change between round and square
         context?.setLineCap(CGLineCap.round)
         // change the style how your line draws
-        context?.setBlendMode(CGBlendMode.normal)
+        context?.setBlendMode(blendMode)
         context?.strokePath()
         mainImageView.image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        
-        //        CGContext.setLineWidth(context!)
-        
     }
     
     
@@ -78,6 +77,24 @@ class ViewController: UIViewController {
         }
     }
     
+    
+    @IBAction func changeStyle(_ sender: Any) {
+        switch (sender as AnyObject).tag {
+        case 11:
+            blendMode = CGBlendMode.plusLighter
+        case 12:
+            blendMode = CGBlendMode.overlay
+        case 13:
+            blendMode = CGBlendMode.normal
+        default:
+            blendMode = CGBlendMode.normal
+        }
+    }
+    
+    
+    
+    
+    
     @IBAction func shareButton(_ sender: Any) {
         UIGraphicsBeginImageContext(mainImageView.frame.size)
         mainImageView.image?.draw(in: CGRect(x:0, y:0, width: mainImageView.frame.size.width, height: mainImageView.frame.size.height))
@@ -87,9 +104,7 @@ class ViewController: UIViewController {
         present(shareActivity, animated: true, completion: nil)
     }
     
-    
-    
-    
+    @IBOutlet weak var sizeLabel: UILabel!
     @IBAction func clearButton(_ sender: Any) {
         mainImageView.image = nil
     }
@@ -110,16 +125,19 @@ class ViewController: UIViewController {
     }
     
     @IBOutlet weak var textLabel: UILabel!
+
+    @IBOutlet weak var brushSlider: UISlider!
+    
     @IBAction func sizeSlider(_ sender: UISlider) {
-        textLabel.font = UIFont.systemFont(ofSize: CGFloat(sender.value))
+        if sender == brushSlider {
+            brushWidth = CGFloat(sender.value)
+            sizeLabel.text = NSString(format: "%.1f", brushWidth.native) as String
+        }
     }
-    
-    
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        sizeLabel.text = NSString(format: "%.1f", brushSlider.value) as String
         // Do any additional setup after loading the view, typically from a nib.
     }
 
