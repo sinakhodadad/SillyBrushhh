@@ -14,7 +14,10 @@
 		43E7A3E4220727BC00D94102 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E7A3E2220727BC00D94102 /* LaunchScreen.storyboard */; };
 		43E7A3EF220727BC00D94102 /* SillyBrushhhTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E7A3EE220727BC00D94102 /* SillyBrushhhTests.swift */; };
 		43E7A3FA220727BC00D94102 /* SillyBrushhhUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E7A3F9220727BC00D94102 /* SillyBrushhhUITests.swift */; };
-		43E7A4082207282700D94102 /* pics in Resources */ = {isa = PBXBuildFile; fileRef = 43E7A4072207282700D94102 /* pics */; };
+		43E7A40D220735AA00D94102 /* eraser_1320087.png in Resources */ = {isa = PBXBuildFile; fileRef = 43E7A409220735A900D94102 /* eraser_1320087.png */; };
+		43E7A40E220735AA00D94102 /* Screen Shot 2019-02-02 at 12.04.58.png in Resources */ = {isa = PBXBuildFile; fileRef = 43E7A40A220735A900D94102 /* Screen Shot 2019-02-02 at 12.04.58.png */; };
+		43E7A40F220735AA00D94102 /* save.png in Resources */ = {isa = PBXBuildFile; fileRef = 43E7A40B220735A900D94102 /* save.png */; };
+		43E7A410220735AA00D94102 /* reset.png in Resources */ = {isa = PBXBuildFile; fileRef = 43E7A40C220735AA00D94102 /* reset.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +51,10 @@
 		43E7A3F5220727BC00D94102 /* SillyBrushhhUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SillyBrushhhUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E7A3F9220727BC00D94102 /* SillyBrushhhUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SillyBrushhhUITests.swift; sourceTree = "<group>"; };
 		43E7A3FB220727BC00D94102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		43E7A4072207282700D94102 /* pics */ = {isa = PBXFileReference; lastKnownFileType = folder; path = pics; sourceTree = "<group>"; };
+		43E7A409220735A900D94102 /* eraser_1320087.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eraser_1320087.png; sourceTree = "<group>"; };
+		43E7A40A220735A900D94102 /* Screen Shot 2019-02-02 at 12.04.58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2019-02-02 at 12.04.58.png"; sourceTree = "<group>"; };
+		43E7A40B220735A900D94102 /* save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = save.png; sourceTree = "<group>"; };
+		43E7A40C220735AA00D94102 /* reset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reset.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +109,9 @@
 				43E7A3DB220727BA00D94102 /* ViewController.swift */,
 				43E7A3DD220727BA00D94102 /* Main.storyboard */,
 				43E7A3E0220727BC00D94102 /* Assets.xcassets */,
-				43E7A4072207282700D94102 /* pics */,
 				43E7A3E2220727BC00D94102 /* LaunchScreen.storyboard */,
 				43E7A3E5220727BC00D94102 /* Info.plist */,
+				43E7A411220735B800D94102 /* pics */,
 			);
 			path = SillyBrushhh;
 			sourceTree = "<group>";
@@ -126,6 +132,17 @@
 				43E7A3FB220727BC00D94102 /* Info.plist */,
 			);
 			path = SillyBrushhhUITests;
+			sourceTree = "<group>";
+		};
+		43E7A411220735B800D94102 /* pics */ = {
+			isa = PBXGroup;
+			children = (
+				43E7A40B220735A900D94102 /* save.png */,
+				43E7A40C220735AA00D94102 /* reset.png */,
+				43E7A40A220735A900D94102 /* Screen Shot 2019-02-02 at 12.04.58.png */,
+				43E7A409220735A900D94102 /* eraser_1320087.png */,
+			);
+			path = pics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,10 +249,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43E7A410220735AA00D94102 /* reset.png in Resources */,
 				43E7A3E4220727BC00D94102 /* LaunchScreen.storyboard in Resources */,
 				43E7A3E1220727BC00D94102 /* Assets.xcassets in Resources */,
+				43E7A40F220735AA00D94102 /* save.png in Resources */,
+				43E7A40E220735AA00D94102 /* Screen Shot 2019-02-02 at 12.04.58.png in Resources */,
 				43E7A3DF220727BA00D94102 /* Main.storyboard in Resources */,
-				43E7A4082207282700D94102 /* pics in Resources */,
+				43E7A40D220735AA00D94102 /* eraser_1320087.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
