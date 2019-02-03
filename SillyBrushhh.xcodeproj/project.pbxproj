@@ -14,6 +14,7 @@
 		43E7A3E4220727BC00D94102 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E7A3E2220727BC00D94102 /* LaunchScreen.storyboard */; };
 		43E7A3EF220727BC00D94102 /* SillyBrushhhTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E7A3EE220727BC00D94102 /* SillyBrushhhTests.swift */; };
 		43E7A3FA220727BC00D94102 /* SillyBrushhhUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E7A3F9220727BC00D94102 /* SillyBrushhhUITests.swift */; };
+		43E7A4082207282700D94102 /* pics in Resources */ = {isa = PBXBuildFile; fileRef = 43E7A4072207282700D94102 /* pics */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		43E7A3F5220727BC00D94102 /* SillyBrushhhUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SillyBrushhhUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E7A3F9220727BC00D94102 /* SillyBrushhhUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SillyBrushhhUITests.swift; sourceTree = "<group>"; };
 		43E7A3FB220727BC00D94102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43E7A4072207282700D94102 /* pics */ = {isa = PBXFileReference; lastKnownFileType = folder; path = pics; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				43E7A3DB220727BA00D94102 /* ViewController.swift */,
 				43E7A3DD220727BA00D94102 /* Main.storyboard */,
 				43E7A3E0220727BC00D94102 /* Assets.xcassets */,
+				43E7A4072207282700D94102 /* pics */,
 				43E7A3E2220727BC00D94102 /* LaunchScreen.storyboard */,
 				43E7A3E5220727BC00D94102 /* Info.plist */,
 			);
@@ -232,6 +235,7 @@
 				43E7A3E4220727BC00D94102 /* LaunchScreen.storyboard in Resources */,
 				43E7A3E1220727BC00D94102 /* Assets.xcassets in Resources */,
 				43E7A3DF220727BA00D94102 /* Main.storyboard in Resources */,
+				43E7A4082207282700D94102 /* pics in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
