@@ -131,6 +131,9 @@ class ViewController: UIViewController {
             green = rnd()
             blue = rnd()
         }
+        else{
+            (red, green, blue) = colors[index]
+        }
         
         
     }
