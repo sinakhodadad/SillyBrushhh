@@ -34,6 +34,10 @@ class ViewController: UIViewController {
         
     ]
     
+    func rnd() -> CGFloat{
+        return CGFloat(Float(arc4random())/Float(UINT32_MAX))
+    }
+    
     func drawLine( fromPoint: CGPoint, toPoint: CGPoint){
         UIGraphicsBeginImageContext(mainImageView.frame.size)
         let context = UIGraphicsGetCurrentContext()
@@ -117,11 +121,18 @@ class ViewController: UIViewController {
         var index = (sender as AnyObject).tag ?? 0
         print(index)
 
-        if index < 0 || index >= colors.count{
+        if (index < 0 || index >= colors.count) && (index != 20){
             index = 0
+            (red, green, blue) = colors[index]
+
         }
-        (red, green, blue) = colors[index]
-       
+        else if (index < 0 || index >= colors.count) && (index == 20) {
+            red = rnd()
+            green = rnd()
+            blue = rnd()
+        }
+        
+        
     }
     
     @IBOutlet weak var textLabel: UILabel!
